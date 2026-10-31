@@ -1,0 +1,24 @@
+{
+  "installation_dir": "D:/Application/MCGSE/Program",
+  "backup_dir": ".mcgs-mcp/demo-backups",
+  "scripts": {
+    "example": {"path": "examples/车库门示例.txt", "encoding": "utf-8", "writable": true}
+  },
+  "modbus": {
+    "enabled": true,
+    "host": "127.0.0.1",
+    "port": 15020,
+    "device_id": 1,
+    "timeout_seconds": 1.0,
+    "allow_writes": true,
+    "tags": {
+      "门位置": {"area": "holding", "address": 1, "data_type": "uint16", "minimum": 0.0, "maximum": 100.0, "writable": true},
+      "开门请求": {"area": "coil", "address": 1, "data_type": "bool", "writable": true},
+      "测试整数": {"area": "holding", "address": 3, "data_type": "int32", "writable": true},
+      "测试浮点数": {"area": "holding", "address": 5, "data_type": "float32", "writable": true},
+      "限位输入": {"area": "discrete_input", "address": 1, "data_type": "bool"},
+      "输入值": {"area": "input", "address": 1, "data_type": "uint16"}
+    }
+  }
+}
+

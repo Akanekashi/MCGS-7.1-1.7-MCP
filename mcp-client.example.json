@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "mcgs-experimental": {
+      "command": "C:/MCGS-MCP/.venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "mcgs_mcp.server",
+        "--config",
+        "C:/MCGS-MCP/config.local.json"
+      ],
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}

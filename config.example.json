@@ -1,0 +1,26 @@
+{
+  "installation_dir": "D:/Application/MCGSE/Program",
+  "backup_dir": ".mcgs-mcp/backups",
+  "projects": {},
+  "scripts": {
+    "example": {
+      "path": "examples/车库门示例.txt",
+      "encoding": "utf-8",
+      "writable": false
+    }
+  },
+  "native_project": {
+    "enabled": false,
+    "allow_copy_writes": false,
+    "output_dir": ".mcgs-mcp/native-projects"
+  },
+  "modbus": {
+    "enabled": false,
+    "host": "127.0.0.1",
+    "port": 3000,
+    "device_id": 1,
+    "timeout_seconds": 2.0,
+    "allow_writes": false,
+    "tags": {}
+  }
+}

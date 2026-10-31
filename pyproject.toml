@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcgs-mcp"
+version = "0.1.0"
+description = "Experimental local MCP server for MCGS inspection and mapped Modbus data"
+requires-python = ">=3.11"
+dependencies = ["mcp==2.3.0", "pymodbus==3.16.1", "pydantic>=2.12,<3", "access-parser==0.0.6", "pywin32==312; sys_platform=='win32'"]
+
+[project.optional-dependencies]
+test = ["pytest==9.0.2"]
+
+[project.scripts]
+mcgs-mcp = "mcgs_mcp.server:main"
+mcgs-mcp-demo = "mcgs_mcp.demo:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
